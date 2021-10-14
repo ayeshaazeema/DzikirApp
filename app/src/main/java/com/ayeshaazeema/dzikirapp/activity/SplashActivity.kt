@@ -1,8 +1,10 @@
-package com.ayeshaazeema.dzikirapp
+package com.ayeshaazeema.dzikirapp.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.ayeshaazeema.dzikirapp.MainActivity
+import com.ayeshaazeema.dzikirapp.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

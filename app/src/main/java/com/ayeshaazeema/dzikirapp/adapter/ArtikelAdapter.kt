@@ -1,9 +1,7 @@
 package com.ayeshaazeema.dzikirapp.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.ayeshaazeema.dzikirapp.databinding.ItemArtikelBinding
 import com.ayeshaazeema.dzikirapp.model.Artikel
