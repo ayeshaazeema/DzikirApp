@@ -20,7 +20,9 @@ class QauliyahActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         qauliyahBinding = ActivityQauliyahBinding.inflate(layoutInflater)
         setContentView(qauliyahBinding.root)
+
         supportActionBar?.hide()
+
         showRecycler()
         back()
     }

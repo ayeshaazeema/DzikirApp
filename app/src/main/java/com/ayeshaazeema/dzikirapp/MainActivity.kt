@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.ayeshaazeema.dzikirapp.activity.DzikirHarianActivity
 import com.ayeshaazeema.dzikirapp.activity.DzikirSetiapSaatActivity
 import com.ayeshaazeema.dzikirapp.activity.QauliyahActivity
 import com.ayeshaazeema.dzikirapp.adapter.ArtikelAdapter
@@ -88,7 +89,9 @@ class MainActivity : AppCompatActivity() {
         mainBinding.llDzikirDoaShalat.setOnClickListener {
             startActivity(QauliyahActivity.getLaunchService(this))
         }
-        mainBinding.llDzikirDoaHarian.setOnClickListener { }
+        mainBinding.llDzikirDoaHarian.setOnClickListener {
+            startActivity(DzikirHarianActivity.getLaunchService(this))
+        }
         mainBinding.llDzikirSetiapSaat.setOnClickListener {
             startActivity(DzikirSetiapSaatActivity.getLaunchService(this))
         }

@@ -20,6 +20,7 @@ class DzikirSetiapSaatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         dzikirSetiapSaatBinding = ActivityDzikirSetiapSaatBinding.inflate(layoutInflater)
         setContentView(dzikirSetiapSaatBinding.root)
+
         supportActionBar?.hide()
 
         showRecyclerList()
@@ -33,13 +34,11 @@ class DzikirSetiapSaatActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerList() {
-        dzikirSetiapSaatBinding.rvDzikirSetiapSaat.layoutManager = LinearLayoutManager(this)
-
         listDzikirSetiapSaat.clear()
         listDzikirSetiapSaat.addAll(DataDzikirDoa.listDzikir)
 
+        dzikirSetiapSaatBinding.rvDzikirSetiapSaat.layoutManager = LinearLayoutManager(this)
         dzikirSetiapSaatBinding.rvDzikirSetiapSaat.adapter = DzikirDoaAdapter(listDzikirSetiapSaat)
-
         dzikirSetiapSaatBinding.rvDzikirSetiapSaat.setHasFixedSize(true)
     }
 

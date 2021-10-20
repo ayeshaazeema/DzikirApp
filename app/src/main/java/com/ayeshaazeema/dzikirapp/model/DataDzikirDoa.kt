@@ -251,5 +251,3 @@ object DataDzikirDoa {
             return list
         }
 }
-
-
