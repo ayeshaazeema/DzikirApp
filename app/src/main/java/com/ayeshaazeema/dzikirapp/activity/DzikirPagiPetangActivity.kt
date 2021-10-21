@@ -1,5 +1,7 @@
 package com.ayeshaazeema.dzikirapp.activity
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -35,7 +37,14 @@ class DzikirPagiPetangActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
+        finish()
         return super.onSupportNavigateUp()
+    }
+
+    companion object {
+        fun getLaunchService(from: Context) =
+            Intent(from, DzikirPagiPetangActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            }
     }
 }
